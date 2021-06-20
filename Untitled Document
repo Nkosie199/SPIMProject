@@ -1,0 +1,25 @@
+# 5 february 2017
+# nkosie gumede
+# program to print out the factorial of any number
+
+.data
+	iMsg .ascii "Please enter the number you want to get the factorial of /n"	
+	oMsg .ascii "The factorial is: /n"
+	iVar .word 1
+	oVar .word 1
+
+.text
+
+	main:
+
+	# print prompt to get input
+	li $a0 4
+	mv $v0 iMsg
+	syscall
+	
+
+	# prompt user to enter a numb
+
+	# exit the program
+	jr $ra
+
